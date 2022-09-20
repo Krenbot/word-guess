@@ -2,7 +2,16 @@ var startBtn = document.querySelector('.start-button')
 var wordBlanksEl = document.querySelector('.word-blanks')
 var words = ["javascript", "variable", "function", "object", "python", "localstorage", "timeout", "interval"]
 var word
+var validChars = "abcdefghijklmopqrstuvwxyz"
 
+
+function handleKeydown(event){
+    console.log(event.key)
+    if (validChars.includes(event.key)){
+        //keep track of char that was guessed
+        //re-render word blanks
+    }
+}
 
 function renderCharacters(){
 var string = ""
@@ -32,7 +41,7 @@ function startRound(){
 
 
 startBtn.addEventListener("click", startRound)
-
+document.addEventListener('keydown', handleKeydown)
 
 
 //score variable
