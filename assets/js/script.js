@@ -1,14 +1,20 @@
-// Saving data
-// localStorage.setItem('myName', 'Josh')
-// localStorage.setItem('favLang', 'Javascript')
+var startBtn = document.querySelector('.start-button')
+var wordBlanksEl = document.querySelector('.word-blanks')
+var words = ["javascript", "variable", "function", "object", "python", "localstorage", "timeout", "interval"]
 
-// reading data
-// var myName = localStorage.getItem('myName')
-// console.log(myName)
+function renderChars(){
+    //reset the word-blanks an _ for each letter of the new word
+}
 
-// var favLang = localStorage.getItem('favLang')
-// console.log(favLang)
 
-// Deleting data
-// localStorage.removeItem('favLang')
-// localStorage.clear()
+function startRound(){
+//get random words from array
+}
+
+
+
+startBtn.addEventListener("click", startRound)
+
+
+//score variable
+//time left variable
